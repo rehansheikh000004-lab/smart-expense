@@ -21,3 +21,10 @@ export default function Dashboard() {
     </div>
   );
 }
+
+<button onClick={() => {
+  localStorage.clear();
+  window.location.href = "/login";
+}}>
+  Logout
+</button>
