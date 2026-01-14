@@ -3,6 +3,11 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import authRoutes from "./routes/auth.js";
+import groupRoutes from "./routes/groups.js";
+import expenseRoutes from "./routes/expenses.js";
+
+app.use("/api/groups", groupRoutes);
+app.use("/api/expenses", expenseRoutes);
 
 dotenv.config();
 
